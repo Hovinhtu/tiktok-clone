@@ -1,0 +1,7 @@
+.headerWrapperMain{
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+    align-items: center;
+    width: 1160px;
+  }

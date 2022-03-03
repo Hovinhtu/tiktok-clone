@@ -1,0 +1,29 @@
+.spanSpliter {
+  width: 2px;
+  height: 30px;
+  background-color: #e6e7e8;
+}
+.searchFormContainer {
+  background-color: #f1f1f2;
+  border-radius: 30px;
+  padding: 12px 16px;
+}
+.formContainer {
+  width: 329px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputElement {
+  width: 292px;
+  background-color: #f1f1f2;
+  border: none;
+  color: white;
+}
+.buttonStyle {
+  border: none;
+}
+::placeholder {
+  color: #7f7f7f;
+}

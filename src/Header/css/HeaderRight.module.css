@@ -1,0 +1,22 @@
+.headerRightContainer{
+    width: 210px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
+.linkText{
+    width: 50px;
+    height: 22px;
+    color: black;
+    text-decoration: none;
+  }
+.loginButton{
+    margin: 8px;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #fffefe;
+    background-color: #ef2950;
+    border: none;
+    width: 90px;
+    height: 100%;
+  };

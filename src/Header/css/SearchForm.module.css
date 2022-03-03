@@ -1,12 +1,13 @@
 .spanSpliter {
-  width: 2px;
-  height: 30px;
-  background-color: #e6e7e8;
+  width: 0.5px;
+  height: 28px;
+  background-color: #d6d7d9;
 }
 .searchFormContainer {
   background-color: #f1f1f2;
   border-radius: 30px;
   padding: 12px 16px;
+
 }
 .formContainer {
   width: 329px;
@@ -18,11 +19,25 @@
 .inputElement {
   width: 292px;
   background-color: #f1f1f2;
-  border: none;
   color: white;
+  border: none;
+  background: transparent;
+  caret-color: rgba(254, 44, 85, 1.0);
+  outline: none;
 }
 .buttonStyle {
   border: none;
+  padding: 11px 16px 11px 12px;
+  margin: -12px -16px;
+  margin-left: 0px;
+  background: transparent;
+  font-size: 0;
+}
+.buttonStyle:hover{
+  cursor: pointer;
+  background: rgb(59, 59, 59, 0.05);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px ;
 }
 ::placeholder {
   color: #7f7f7f;

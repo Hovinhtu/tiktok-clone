@@ -1,17 +1,19 @@
 .spanSpliter {
-  width: 0.5px;
+  width: 1px;
   height: 28px;
   background-color: #d6d7d9;
 }
 .searchFormContainer {
   background-color: #f1f1f2;
   border-radius: 30px;
-  padding: 12px 16px;
-
+  
+}
+.searchFormContainer:focus-within{
+  border: 1.5px solid rgba(22, 24, 35, 0.2);
 }
 .formContainer {
-  width: 329px;
-  height: 22px;
+  height: 28px;
+  padding: 12px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +26,13 @@
   background: transparent;
   caret-color: rgba(254, 44, 85, 1.0);
   outline: none;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
+
+
 .buttonStyle {
   border: none;
   padding: 11px 16px 11px 12px;

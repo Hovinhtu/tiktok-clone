@@ -1,29 +1,32 @@
 .headerRightContainer {
-  width: 210px;
+  width: 210.19px;
   height: 36px;
   display: flex;
   align-items: center;
 }
 .linkText {
-  width: 50px;
-  height: 22px;
+  line-height: 22px;
   color: black;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
 }
 .linkText:hover{
   color: rgb(22, 24, 35);
   text-decoration: underline;
 }
 .loginButton {
-  margin: 8px;
-  margin-right: 0px;
+  margin: 8px 0px 8px 16px;
   border-radius: 5px;
   padding: 6px 8px;
   color: #fffefe;
   background-color: #fe2c55;
   border: none;
-  width: 90px;
-  height: 100%;
+  min-width: 100px;
+  min-height: 36px;
+  font-weight: 700;
+  font-size: 16px;
 }
 .loginButton:hover{
   cursor: pointer;

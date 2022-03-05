@@ -1,0 +1,25 @@
+.divMainNavBar{
+    margin-bottom: 8px;
+    padding: 0;
+}
+.tmpLink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: background ease-in-out 200ms;
+}
+.tmpLink:hover{
+    background: rgba(22, 24, 35, 0.03);
+    cursor: pointer;
+}
+
+.h2MainNavText{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+    margin-left: 8px;
+}

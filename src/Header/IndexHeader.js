@@ -5,7 +5,7 @@ import HeaderRight from "./js/HeaderRight";
 
 import styles from "./css/Index.module.css";
 
-export default function Index() {
+export default function IndexHeader() {
   return (
     <div className={styles.headerContainerMain}>
       <div className={styles.headerWrapperMain}>

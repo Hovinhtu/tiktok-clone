@@ -1,0 +1,17 @@
+.divSideBar{
+    font-family: 'IBM Plex Sans','Montserrat', sans-serif;
+}
+.divScrollContainer{
+    width: 356px;
+    background: rgba(255, 255, 255, 1.0);
+    padding-right: 8px;
+    top: 60px;
+    bottom: 0;
+}
+.divWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%;
+    padding: 20px 0 26px 8px;
+}

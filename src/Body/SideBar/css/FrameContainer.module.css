@@ -1,0 +1,42 @@
+.divFrameContainer{
+    position: relative;
+    padding: 20px 8px 24px 8px;
+}
+.pLoginHint{
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+.pLoginHint::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 8px;
+    right: 8px;
+    top: 0;
+    background: rgba(22, 24, 35, .12);
+    transform: scaleY(.5);
+}
+.loginButton{
+    margin-top: 20px;
+    border: 1px solid rgba(254, 44, 85, 1.0);
+    border-radius: 4px;
+    color: rgba(254, 44, 85, 1.0);
+    padding: 6px 8px;
+    background-color: rgba(255, 255, 255, 1.0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    min-width: 168px;
+    min-height: 48px;
+    width: 100%;
+    position: relative;
+}
+.loginButton:hover{
+    background-color: rgba(254, 44, 85, 0.06);
+}

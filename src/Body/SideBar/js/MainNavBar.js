@@ -20,7 +20,7 @@ const array = [
   },
 ];
 export default function MainNavBar() {
-  const [state, setState] = useState();
+  const [state, setState] = useState(0);
   const handleClick = (id) => {
     setState(id);
   };

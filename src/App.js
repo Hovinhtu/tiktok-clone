@@ -8,12 +8,7 @@ import styles from "./App.module.css";
 export default function App() {
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-start",
-        minHeight: "100vh",
-      }}
+      className={styles.divPage }
     >
       <IndexHeader />
       <div className={styles.divBodyContainer}>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/HeaderRight.module.css";
+import stylesGlobal from ".././../App.module.css"
 export default function HeaderRight() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function HeaderRight() {
         <a href="/" className={styles.linkText}>
           Tải lên
         </a>
-        <button className={styles.loginButton}>Đăng nhập</button>
+        <button className={stylesGlobal.loginButton}>Đăng nhập</button>
         <i className={styles.iconWrapper}>
           <svg
             className={styles.threeDot}

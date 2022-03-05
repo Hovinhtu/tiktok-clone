@@ -2,16 +2,47 @@
     font-family: 'IBM Plex Sans','Montserrat', sans-serif;
 }
 .divScrollContainer{
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 356px;
     background: rgba(255, 255, 255, 1.0);
     padding-right: 8px;
     top: 60px;
     bottom: 0;
+    z-index: 99;
+    overscroll-behavior-y: contain;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    perspective-origin: right top;
+    bottom: 0;
 }
+
 .divWrapper{
     display: flex;
     flex-direction: column;
     align-items: stretch;
     min-height: 100%;
     padding: 20px 0 26px 8px;
+}
+.divScrollBar{
+    position: absolute;
+    padding: 0 4px;
+    top: 0;
+    transition: opacity .5s;
+    opacity: 0;
+    right: 0;
+    transform-origin: right top;
+}
+.divScrollContainer:hover{
+    opacity: 1;
+}
+.divScrollContainer::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.divScrollBarThumb{
+    width: 6px;
+    background: rgba(22, 24, 35, .06);
+    height: 100%;
+    border-radius: 3px;
 }

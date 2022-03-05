@@ -1,16 +1,31 @@
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans','Montserrat', sans-serif;
+  font-family: "IBM Plex Sans", "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: contain;
 }
 
 code {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-input{
-  font-family: 'IBM Plex Sans','Montserrat', sans-serif;
+input {
+  font-family: "IBM Plex Sans", "Montserrat", sans-serif;
 }
-button{
-  font-family: 'IBM Plex Sans','Montserrat', sans-serif;
+button {
+  font-family: "IBM Plex Sans", "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
 }

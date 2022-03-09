@@ -1,0 +1,47 @@
+[33mcommit 8546d7b59666c4fbdb47eff1e277c95d169b6448[m[33m ([m[1;36mHEAD -> [m[1;32mnav-bar[m[33m)[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Wed Mar 9 18:53:59 2022 +0700
+
+    update ProfileOuterContainer
+
+[33mcommit 2a803beabf05ad0cc48c8d898e4a803b940eba6c[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Sat Mar 5 23:44:50 2022 +0700
+
+    Update User container, scroll bar in component have trouble
+
+[33mcommit 2d44d9b7c8d7d041b111ff6b2348912970724714[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Sat Mar 5 17:09:34 2022 +0700
+
+    Update FrameContent SideBar
+
+[33mcommit b8ebfaa72fdb71f3eec843547cdc333d264b634e[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Sat Mar 5 15:01:29 2022 +0700
+
+    update Main Nav Bar component
+
+[33mcommit d689e101c9882305b839b5881373593f6f533a6d[m[33m ([m[1;31morigin/nav-bar[m[33m)[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Fri Mar 4 19:19:48 2022 +0700
+
+    Nav-bar UI done without responsive
+
+[33mcommit 3148fadd29369e35e9f068cdbe2a44495a2255e0[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Thu Mar 3 22:06:10 2022 +0700
+
+    Nav-bar change header-right
+
+[33mcommit 76d9f4eb13376492aaaa6545756f326eb8e28099[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Thu Mar 3 21:00:28 2022 +0700
+
+    Continue with nav-bar
+
+[33mcommit 8b23b050ece33b1fef1dde07f40d6f846fc6e27f[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: TuCalisthenic <hovinhtusqtt@gmail.com>
+Date:   Thu Mar 3 09:29:46 2022 +0700
+
+    Push tp git

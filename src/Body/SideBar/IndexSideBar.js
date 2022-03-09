@@ -2,6 +2,7 @@ import React from "react";
 import MainNavBar from "./js/MainNavBar";
 import FrameContainer from "./js/FrameContainer";
 import UserContainer from "./js/UserContainer";
+import DiscoverContainer from "./js/DiscoverContainer";
 import styles from "./css/IndexSideBar.module.css";
 
 export default function IndexSideBar() {
@@ -12,6 +13,7 @@ export default function IndexSideBar() {
           <MainNavBar />
           <FrameContainer />
           <UserContainer />
+          <DiscoverContainer />
         </div>
         <div
           className={styles.divScrollBar}

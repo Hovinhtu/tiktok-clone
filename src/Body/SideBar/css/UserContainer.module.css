@@ -54,7 +54,7 @@
     vertical-align: middle;
     line-height: 32px;
     background-color: rgba(136, 136, 136, 0.5);
-    border: .5px solid rgba(22, 24, 35, 0.12);
+    border: 0.5px none rgba(22, 24, 35, 0.12);
     cursor: pointer;
 }
 .imgAvatar{
@@ -94,4 +94,18 @@
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
+}
+.divShowMoreText{
+    padding: 0 8px;
+    margin-top: 8px;
+}
+.showMoreText{
+    color: rgb(254, 44, 85);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+.showMoreText:hover{
+    cursor: pointer;
 }

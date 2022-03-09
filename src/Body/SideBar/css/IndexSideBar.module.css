@@ -1,20 +1,25 @@
 .divSideBar{
     font-family: 'IBM Plex Sans','Montserrat', sans-serif;
+    position: relative;
+    width: 356px;
+    -webkit-flex: 0 0 356px;
+    flex: 0 0 356px;
 }
 .divScrollContainer{
     overflow-x: hidden;
     overflow-y: auto;
-    width: 356px;
-    background: rgba(255, 255, 255, 1.0);
-    padding-right: 8px;
-    top: 60px;
-    bottom: 0;
-    z-index: 99;
     overscroll-behavior-y: contain;
     perspective: 1px;
     transform-style: preserve-3d;
     perspective-origin: right top;
+    width: 356px;
+    background: rgba(255, 255, 255, 1.0) ;
+    padding-right: 8px;
+    top: 60px;
     bottom: 0;
+    position: fixed;
+    z-index: 99;
+   
 }
 
 .divWrapper{
@@ -30,19 +35,27 @@
     top: 0;
     transition: opacity .5s;
     opacity: 0;
+    
     right: 0;
     transform-origin: right top;
 }
-.divScrollContainer:hover{
-    opacity: 1;
+.divScrollBarThumb{
+    width: 6px;
+    height: 100%;
+    border-radius: 3px;
+   
+    background: rgba(22, 24, 35, .06);
 }
+
 .divScrollContainer::-webkit-scrollbar{
     width: 0;
     height: 0;
 }
-.divScrollBarThumb{
-    width: 6px;
-    background: rgba(22, 24, 35, .06);
-    height: 100%;
-    border-radius: 3px;
+/* .divScrollContainer::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background: rgba(22, 24, 35,0);
+    transition: background 0.5s;
+} */
+.divScrollContainer:hover .divScrollBar{
+    opacity: 1;
 }

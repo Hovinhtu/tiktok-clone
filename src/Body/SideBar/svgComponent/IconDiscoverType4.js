@@ -3,7 +3,7 @@ import styles from "../css/DiscoverContainer.module.css";
 export default function IconDiscoverType4() {
   return (
     <svg
-      class={styles.styledMusicNote}
+      className={styles.styledMusicNote}
       width="16"
       height="16"
       viewBox="0 0 48 48"

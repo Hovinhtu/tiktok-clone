@@ -1,0 +1,102 @@
+.divFooterContainer{
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px 0 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.divFooterContainer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+    right: 8px;
+    height: 1px;
+    background: rgba(22, 24, 35, 0.12);
+    transform: scaleY(0.5);
+}
+.divLinkContainer{
+    margin-bottom: 8px;
+}
+.styleNavLink{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+.styleNavLink:link{
+    color: rgba(22, 24, 35, 0.5);
+}
+.styleNavLink:hover{
+    text-decoration: underline;
+}
+.divMoreContainer{
+    margin-bottom: 8px;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.spanMoreText{
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.spanCopyRight{
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+
+
+/* Footer Component CSS*/
+.divContainer{
+    position: absolute;
+    z-index: 1;
+    background:rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 /12%) 0px 4px 16px;
+    bottom: calc(100% + 12px);
+    transition: opacity 300ms ease 0s;  
+    opacity: 1; 
+    transform: translateY(5px);
+}
+
+.divMorePopupWrapper{
+    box-sizing: border-box;
+    padding: 15px 16px 20px;
+    max-width: 200px; 
+    width: fit-content;
+}
+.styledTopArrow{
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 8px;
+    bottom: -8px;
+    transform: rotate(180deg);
+}
+.styledMoreLink{
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: rgb(22, 24, 35);
+    cursor: pointer;
+    transition: color 250ms ease 0s;
+}
+.styledMoreLink:hover{
+    color: rgb(254, 44, 85);
+}

@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  -webkit-align-self: center;
+  flex: 1 1 auto;
 }
 .loginButton {
     margin: 8px 0px 8px 16px;

@@ -6,6 +6,7 @@
 .searchFormContainer {
   background-color: #f1f1f2;
   border-radius: 30px;
+  padding: 12px 16px;
   
 }
 .searchFormContainer:focus-within{
@@ -13,7 +14,7 @@
 }
 .formContainer {
   height: 22px;
-  padding: 12px 16px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;

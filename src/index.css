@@ -1,10 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: "IBM Plex Sans", "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: contain;
-  
+}
+body a {
+  color: rgb(22, 24, 35);
+  transition: color 250ms ease 0s;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 code {

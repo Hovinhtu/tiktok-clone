@@ -13,15 +13,18 @@
     text-decoration: none;
     cursor: pointer;
 }
-.styledAuthorAnchor:hover{
-    text-decoration: underline;
-}
+
 .h3AuthorTitle{
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     display: inline-block;
     margin-right: 4px;
+}
+.h3AuthorTitle:hover, 
+.h4Link:hover,
+.strongText:hover{
+    text-decoration: underline;
 }
 .h4AuthorName{
     font-weight: 400;
@@ -62,4 +65,20 @@
 }
 .strongText{
     font-weight: 600;
+}
+.h4Link{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+.svgIcon{
+    transform: translateY(4px);
+    margin-right: 5px;
 }

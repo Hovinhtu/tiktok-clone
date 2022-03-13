@@ -32,7 +32,7 @@ export default function FooterContainer() {
         onMouseEnter={() => setMoreState(true)}
         onMouseLeave={() => setMoreState(false)}
       >
-        <span class={styles.spanMoreText}>
+        <span className={styles.spanMoreText}>
           Thêm {moreState && <FooterComponent />}
         </span>
       </div>

@@ -6,10 +6,31 @@ import IconPlay from "../svgComponent/IconPlay";
 import IconPause from "../svgComponent/IconPause";
 import IconMute from "../svgComponent/IconMute";
 import IconReport from "../svgComponent/IconReport";
-
+let positionCircleVolume = -36;
 export default function VideoCard() {
   const [videoPlayPause, setVideoPlayPause] = useState(true);
+  const [mouseDownUp, setMouseDownUp] = useState(false);
+  const [positionMouse, setPositionMouse] = useState();
+
   const videoRef = useRef();
+  const prevPositionMouse = useRef();
+
+  useEffect(() => {
+    prevPositionMouse.current = positionMouse;
+  }, [positionMouse]);
+
+  const handleMouseMove = (e) => {
+    mouseDownUp && setPositionMouse(e.clientY);
+    // mouseDownUp && console.log(e.clientY);
+  };
+
+  const handleMouseDown = () => {
+    setMouseDownUp(true);
+  };
+
+  const handleMouseUp = () => {
+    setMouseDownUp(false);
+  };
   useEffect(() => {
     {
       console.log(videoRef.current);
@@ -27,9 +48,28 @@ export default function VideoCard() {
       videoRef.current.pause();
     }
   };
+  if (prevPositionMouse.current !== undefined) {
+    if (prevPositionMouse.current > positionMouse) {
+      if (positionCircleVolume > -36) {
+        positionCircleVolume--;
+        videoRef.current.volume = Math.abs(positionCircleVolume/36)
+      }
+    } else {
+      if (positionCircleVolume < 0) {
+        positionCircleVolume++;
+        videoRef.current.volume = Math.abs(positionCircleVolume/36)
+      }
+    }
+  }
+  console.log(positionCircleVolume);
+
   return (
     <div className={styles.divVideoWrapper}>
-      <div className={styles.divVideoCardContainer}>
+      <div
+        className={styles.divVideoCardContainer}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+      >
         <canvas
           width="56.25"
           height="100"
@@ -59,19 +99,22 @@ export default function VideoCard() {
             {videoPlayPause ? <IconPlay /> : <IconPause />}
           </div>
           <div className={styles.divVoiceContainer}>
-            (
             <div className={styles.divVolumeControlContainer}>
               <div className={styles.divVolumeControlProgress}></div>
               <div
                 className={styles.divVolumeControlCircle}
-                style={{ transform: "translateY(-36px)" }}
+                style={{ transform: `translateY(${positionCircleVolume}px)` }}
+                onMouseDown={handleMouseDown}
+                onMouseUp={handleMouseUp}
               ></div>
               <div
                 className={styles.divVolumeControlBar}
-                style={{ transform: "scaleY(0.8)" }}
+                style={{
+                  transform: `scaleY(${Math.abs(positionCircleVolume / 36)})`,
+                }}
               ></div>
             </div>
-            )
+
             <div className={styles.divMuteIconContainer}>
               <IconMute />
             </div>

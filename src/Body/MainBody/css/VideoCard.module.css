@@ -105,12 +105,12 @@
   }
 }
 .divVideoPlayerContainer:hover .divPlayIconContainer,
-.divVideoPlayerContainer:hover .divMuteIconContainer, 
+.divVideoPlayerContainer:hover .divMuteIconContainer,
 .divVideoPlayerContainer:hover .pReportText {
   opacity: 1;
 }
 
-.divVolumeControlContainer{
+.divVolumeControlContainer {
   width: 24px;
   height: 64px;
   margin: 8px 7px 0;
@@ -120,33 +120,39 @@
   border-radius: 32px;
   background: rgba(22, 24, 35, 0.34);
 }
-.divVolumeControlProgress{
+
+.divVolumeControlBar {
   width: 2px;
-  height: 48px;
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 11px;
-  top: 8px;
-  bottom: 8px;
-  cursor: pointer;
-}
-.divVolumeControlCircle{
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  left: 6px;
-  bottom: 8px;
-  cursor: pointer;
-  z-index: 1;
-}
-.divVolumeControlBar{
-  width: 2px;
-  height: 48px;
+  height: 47px;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 11px;
   bottom: 8px;
   transform-origin: center bottom;
+}
+
+.inputVolume {
+  z-index: 1;
+  -webkit-appearance: none;
+  transform: rotate(270deg);
+  width: 48px;
+  height: 3px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  position: absolute;
+  left: -11.5px;
+  top: 31px;
+  cursor: pointer;
+}
+.inputVolume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
 }

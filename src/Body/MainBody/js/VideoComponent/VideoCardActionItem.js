@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../css/VideoCardActionItem.module.css";
+import styles from "../../css/VideoCardActionItem.module.css";
 
-import IconHeart from "../svgComponent/IconHeart";
-import IconEllipsisRightFill from "../svgComponent/IconEllipsisRightFill";
-import IconShare from "../svgComponent/IconShare";
+import IconHeart from "../../svgComponent/IconHeart";
+import IconEllipsisRightFill from "../../svgComponent/IconEllipsisRightFill";
+import IconShare from "../../svgComponent/IconShare";
+
 
 export default function VideoCardActionItem() {
   return (

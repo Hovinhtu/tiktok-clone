@@ -44,16 +44,16 @@ export default function VideoCard() {
           className={styles.canvasVideoCardPlaceholder}
         ></canvas>
         <div className={styles.divVideoPlayerContainer}>
-          <VideoContainer videoReference={videoRef}/>
-          <VideoPlayPause 
+          <VideoContainer videoReference={videoRef} />
+          <VideoPlayPause
             playPauseControl={playPause}
             playPauseFlag={videoPlayPause}
           />
           <VideoVolume
-            defaultVolumeValue= {VOLUME_VALUE}
-            volumeValue= {positionMouse}
+            defaultVolumeValue={VOLUME_VALUE}
+            volumeValue={positionMouse}
             handleChange={handleOnChangeInput}
-            iconSoundFlag= {iconSoundStatus}
+            iconSoundFlag={iconSoundStatus}
           />
           <div className={styles.divVideoControlBottom}></div>
         </div>

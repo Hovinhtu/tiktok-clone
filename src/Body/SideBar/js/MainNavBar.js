@@ -29,7 +29,7 @@ export default function MainNavBar() {
       {array.map((value, index) => {
         return (
           <div key={index}>
-            <a className={styles.tmpLink} onClick={() => handleClick(index)}>
+            <a href="" className={styles.tmpLink} onClick={() => handleClick(index)}>
               <value.icon flag={state === index} />
               <h2
                 className={styles.h2MainNavText}

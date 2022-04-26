@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "../css/DiscoverContainer.module.css";
 import { listApi } from "../API/ListDiscover";
 
@@ -13,7 +13,7 @@ export default function DiscoverContainer() {
       <div className={styles.divDiscoverListContainer}>
         {array.map((discoverList, index) => {
           let jsx;
-          {
+          
             switch (discoverList.type) {
               case 3:
                 jsx = <IconDiscoverType3 />;
@@ -24,7 +24,7 @@ export default function DiscoverContainer() {
               default:
                 console.log("No Component - In DiscoverContainer");
             }
-          }
+          
           return (
             <a
               key={index}

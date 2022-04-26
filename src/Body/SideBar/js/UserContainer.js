@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../css/UserContainer.module.css";
 import { api } from "../API/Discover";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import IconVerify from "../svgComponent/IconVerify";
 import ProfileOuterContainer from "./ProfileOuterContainer";
 
@@ -50,6 +50,7 @@ export default function UserContainer() {
                   <img
                     src={convertDiscover.cover}
                     className={styles.imgAvatar}
+                    alt="avatar-img"
                   />
                 </span>
               </div>

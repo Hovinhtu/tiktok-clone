@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "../css/FrameContainer.module.css"
-import stylesGlobal from "../../../App.module.css"
 export default function FrameContainer() {
   return (
     <div className={styles.divFrameContainer}>

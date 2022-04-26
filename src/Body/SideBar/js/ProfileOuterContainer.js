@@ -18,6 +18,7 @@ export default function ProfileOuterContainer(props) {
               <img
                 loading="lazy"
                 src={props.cover}
+                alt="avatar-img"
                 className={styles.imgAvatar}
               />
             </span>

@@ -22,7 +22,6 @@ export default function FooterComponent() {
       <div className={styles.divMorePopupWrapper}>
         <a
           href="https://www.tiktok.com/legal/law-enforcement?lang=vi-VN"
-          target="_blank"
           className={styles.styledMoreLink}
         >
           NGUYÊN TẮC THỰC THI PHÁP LUẬT CỦA TIKTOK

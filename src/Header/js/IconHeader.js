@@ -3,7 +3,7 @@ import IconComponent from "./IconComponent";
 
 export default function IconHeader() {
   return ( 
-      <a href="" style={{ width: "118px", height: "42px",fontSize:"0px" }} href="#">
+      <a href="" style={{ width: "118px", height: "42px",fontSize:"0px" }} >
         <IconComponent />
         <strong>Tiktok</strong>
       </a>

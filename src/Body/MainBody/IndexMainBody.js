@@ -20,22 +20,6 @@ export default function IndexMainBody() {
           <ListVideos />
           <Content />
         </div>
-        <div className={styles.divItemContainer}>
-          <ListVideos />
-          <Content />
-        </div>
-        <div className={styles.divItemContainer}>
-          <ListVideos />
-          <Content />
-        </div>
-        <div className={styles.divItemContainer}>
-          <ListVideos />
-          <Content />
-        </div>
-        <div className={styles.divItemContainer}>
-          <ListVideos />
-          <Content />
-        </div>
       </div>
     </div>
   );

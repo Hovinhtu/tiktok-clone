@@ -16,7 +16,7 @@ export default function ListVideos() {
           >
             <img
               loading="lazy"
-              src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/3ad8b31e32feed4b90535aa73e2dce13~c5_100x100.jpeg?x-expires=1647036000&amp;x-signature=2gaHUUeWcDtTYVNbXJA%2BNLwgj7c%3D"
+              src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/0ebe2ff1cdaec00a769bbb4e4efedda8.jpeg?x-expires=1651118400&x-signature=Ml3lk4lxAWMIhmA0gRR8prpLXTM%3D"
               className={styles.imgAvatar}
             />
           </span>

@@ -32,15 +32,65 @@
   cursor: pointer;
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
 }
+
 .iconWrapper {
   margin-left: 16px;
   position: relative;
   cursor: pointer;
   font-style: normal;
-  padding: 0 4px;
+  padding: 10px 4px;
 }
 .threeDot {
   width: 20px;
   height: 20px;
   display: block;
+}
+
+.iconWrapper:hover .listItem{
+  display: block;
+  opacity: 1;
+}
+.listItem{
+  display: none;
+  position: absolute;
+  background-color: #fffefe;
+  z-index: 1;
+  top: calc(100% + 3px);
+  right: -13px;
+  min-width: 223px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.06);
+  padding: 8px 0;
+  border-radius: 3px;
+  transition: opacity 300ms ease-in 0;
+  opacity: 1;
+}
+
+.listItem::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: 19px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #fffefe;
+}
+.Item{
+  list-style: none;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Item:hover{
+  background-color: rgba(22, 25, 24, 0.03);
+}
+
+.Item__icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }

@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "../../css/VideoCard.module.css";
+import styles from "../css/VideoCard.module.css";
 
-import VideoContainer from "./VideoContainer";
-import VideoPlayPause from "./VideoPlayPause";
-import VideoCardActionItem from "./VideoCardActionItem";
-import VideoVolume from "./VideoVolume";
+import VideoContainer from "./VideoComponent/VideoContainer";
+import VideoPlayPause from "./VideoComponent/VideoPlayPause";
+import VideoCardActionItem from "./VideoComponent/VideoCardActionItem";
+import VideoVolume from "./VideoComponent/VideoVolume";
+import VideoReport from "./VideoComponent/VideoReport";
 
-export default function VideoCard() {
+export default function VideoCard({core}) {
   const VOLUME_VALUE = 60;
 
   const [videoPlayPause, setVideoPlayPause] = useState(true);
@@ -44,7 +45,7 @@ export default function VideoCard() {
           className={styles.canvasVideoCardPlaceholder}
         ></canvas>
         <div className={styles.divVideoPlayerContainer}>
-          <VideoContainer videoReference={videoRef} />
+          <VideoContainer videoReference={videoRef} core={core}/>
           <VideoPlayPause
             playPauseControl={playPause}
             playPauseFlag={videoPlayPause}
@@ -55,10 +56,11 @@ export default function VideoCard() {
             handleChange={handleOnChangeInput}
             iconSoundFlag={iconSoundStatus}
           />
+          <VideoReport />
           <div className={styles.divVideoControlBottom}></div>
         </div>
       </div>
-      <VideoCardActionItem />
+      <VideoCardActionItem core={core} />
     </div>
   );
 }

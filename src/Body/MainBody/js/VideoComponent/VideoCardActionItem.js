@@ -6,26 +6,26 @@ import IconEllipsisRightFill from "../../svgComponent/IconEllipsisRightFill";
 import IconShare from "../../svgComponent/IconShare";
 
 
-export default function VideoCardActionItem() {
+export default function VideoCardActionItem({core}) {
   return (
     <div className={styles.divActionItemContainer}>
       <button className={styles.buttonActionItem}>
         <span className={styles.spanIconWrapper}>
           <IconHeart />
         </span>
-        <strong className={styles.strongText}>181.1K</strong>
+        <strong className={styles.strongText}>{core.like}</strong>
       </button>
       <button className={styles.buttonActionItem}>
         <span className={styles.spanIconWrapper}>
           <IconEllipsisRightFill />
         </span>
-        <strong className={styles.strongText}>7536</strong>
+        <strong className={styles.strongText}>{core.comment}</strong>
       </button>
       <button className={styles.buttonActionItem}>
         <span className={styles.spanIconWrapper}>
           <IconShare />
         </span>
-        <strong className={styles.strongText}>1234</strong>
+        <strong className={styles.strongText}>{core.share}</strong>
       </button>
     </div>
   );

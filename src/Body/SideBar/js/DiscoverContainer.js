@@ -7,6 +7,7 @@ import IconDiscoverType4 from "../svgComponent/IconDiscoverType4";
 
 export default function DiscoverContainer() {
   const array = Object.values(Object.values(listApi)[1])[0];
+  console.log(array)
   return (
     <div className={styles.divDiscoverContainer}>
       <p className={styles.pDiscoverTitle}>Khám phá</p>

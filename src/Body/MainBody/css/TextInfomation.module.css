@@ -59,6 +59,10 @@
 .divContainer{
     font-size: 16px;
     line-height: 22px;
+    display: block;
+}
+.divContainer a {
+    display: inline-block;
 }
 .spanText{
     font-weight: 400;

@@ -1,4 +1,4 @@
-export   const api = 
+export const api = 
 // 20220425212636
 // https://www.tiktok.com/node/share/discover?aid=1988&app_language=vi-VN&app_name=tiktok_web&battery_info=1&browser_language=vi-VN&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F100.0.4896.127%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&count=30&device_id=7068933436447311362&device_platform=web_pc&focus_state=true&from_page=fyp&history_len=3&is_fullscreen=false&is_page_visible=true&noUser=0&os=windows&pageId=&priority_region=&referer=&region=VN&scene=17&screen_height=864&screen_width=1536&tz_name=Asia%2FSaigon&userId=&webcast_language=vi-VN&msToken=sJYxMd3GtnXeFS2CkOIzYAZ10bukU-QDPPGf3pK3DYCEgIdpDVNS3jSFnRNLFJNBe8J2z6649PwtDntJoOW9w_iVDFX4pyk1yaeX5GXIFEDJdBoc5swOGdopjImmoYEf7OT7tU_y&X-Bogus=DFSzswVOiNxAN92NSUsP42XyYJAH&_signature=_02B4Z6wo00001k6p7XQAAIDDbQjD212ns45OqenAAPHbc3
 
